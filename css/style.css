@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('../fonts/ostrichsans-black-webfont.woff2') format('woff2'),
+    url('../fonts/ostrichsans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?qo8oip');
     src:  url('../fonts/icomoon.eot?qo8oip#iefix') format('embedded-opentype'),
@@ -94,3 +102,46 @@ header {
     border-radius: 0 10px 10px 0;
     margin-left: -4px;
 }
+nav {
+    background: linear-gradient(to top, #000, #2c2c2c);
+}
+.nav li {
+    float:left;
+    list-style: none;
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 21px;
+    letter-spacing: 1.7px;
+    font-size: 14px;
+    background: transparent;
+    font-family: 'ostrich_sansblack';
+}
+li.dropdown {
+    position: relative;
+}
+li.dropdown ul {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
+    width: 113px;
+    background: rgba(0,0,0,0.85);
+    padding: 45px 7px 6px;
+}
+li.dropdown ul li {
+    display: block;
+    width: 100%;
+    background: #313439;
+    border-bottom: 1px solid #515055;
+}
+li.dropdown ul li a {
+    font-size: 12px;
+    padding: 9px 8px;
+}
+li.dropdown:hover ul {
+    display: block;
+}
+
