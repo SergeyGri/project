@@ -57,38 +57,42 @@ header {
 }
 .top-menu {
     background: #fff;
-    padding: 4px 25px 3px 6px;
+    padding:4px 0 6px;
 }
 .lang-field {
     color:#d0002f;
     font-weight: bold;
     font-size: 10px;
     float: left;
+    margin-left: 7px;
+}
+.lang-field p {
+    display: inline-block;
 }
 .lang-field span {
     color: #2a2a2a;
 }
-.lang-img, p{
-    display: inline-block;
-}
 .lang-img img {
     margin: 0 7px;
 }
-.lang-field p {
-    vertical-align: center;
+.lang-img {
+    vertical-align: middle;
+    display: inline-block;
 }
 .float-box {
     text-align: right;
 }
 .float-box p {
     font-size: 10px;
-    margin: 7px 11px 0;
+    margin: 0 11px;
     display: inline-block;
+    vertical-align: middle;
 }
 .float-box span {
     color: #333639;
     font-size: 13px;
-    margin:7px 25px 0 11px;
+    margin:0 11px;
+    vertical-align: middle;
 }
 .login, .cart {
     display: inline-block;
@@ -97,12 +101,12 @@ header {
     text-decoration: none;
     color: #ffffff;
     margin: 0 11px;
+    vertical-align: middle;
 }
 .login {
     background: #d0002f;
     padding: 5px 20px;
     border-radius: 10px;
-    margin-top: 6px;
 }
 .cart {
     background: #333639;
