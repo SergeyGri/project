@@ -222,6 +222,7 @@ section {
     max-width: 400px;
     background: rgba(208,0,47,0.8);
     padding: 52px 66px 84px 28px;
+    z-index: 5;
 }
 h1 {
     font-size: 45px;
