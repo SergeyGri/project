@@ -370,3 +370,21 @@ i.icon-envelop {
 .sitemap {
     margin: 0 67px;
 }
+.owl-carousel {
+    position: relative;
+}
+.owl-dots {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 150;
+    display: block;
+}
+.owl-dot {
+    width: 48px;
+    height: 7px;
+    background: #fff;
+}
+.owl-dot.active {
+    background: #d0002f;
+}
