@@ -301,6 +301,33 @@ form.subscribe button {
     margin-left: -4px;
     cursor: pointer;
 }
+div.products .item {
+    display: inline-block;
+    border-bottom: 5px solid #d0002f;
+    box-shadow:0 10px 10px black;
+    margin: 0 11px 44px;
+}
+div.products .item .price-list {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+}
+div.products .item .price-list .product-name{
+    font-size: 25px;
+    font-family: 'ostrich_sansblack';
+    color: #fff;
+}
+div.products .item .price-list .product-price{
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+}
+div.products .item .price-list .red {
+    color: #d0002f;
+}
+div.products .item .price-list .black {
+    color: #000;
+}
 footer {
     border-top: 33px solid #313439;
 }
@@ -426,25 +453,22 @@ i.icon-envelop {
 .sitemap {
     margin: 0 67px;
 }
-.owl-carousel {
-    position: relative;
-}
-.owl-dots {
+section .owl-dots {
     position: absolute;
     right: 20px;
     bottom: 10px;
     z-index: 150;
     display: block;
 }
-.owl-carousel button.owl-dot {
+section .owl-carousel button.owl-dot {
     width: 48px;
     height: 7px;
     background: #fff;
     margin-right: 7px;
 }
-.owl-carousel button.owl-dot.active {
+section .owl-carousel button.owl-dot.active {
     background: #d0002f;
 }
-.owl-dots.disabled {
+section .owl-dots.disabled {
     display: block !important;
 }
