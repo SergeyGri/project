@@ -118,7 +118,7 @@ header {
     margin:0 11px;
     vertical-align: middle;
 }
-.login, .cart {
+.login, .cart, .forgot-password {
     display: inline-block;
     font-size: 10px;
     line-height: 8px;
@@ -130,6 +130,11 @@ header {
 .login {
     background: #d0002f;
     padding: 5px 20px;
+    border-radius: 10px;
+}
+.forgot-password {
+    background: #04a0bd;
+    padding: 6px 20px;
     border-radius: 10px;
 }
 .cart {
@@ -402,19 +407,19 @@ span.title {
     vertical-align: center;
     padding-top: 11px;
 }
-i.icon-facebook {
+.icon-box .icon-facebook {
     background: linear-gradient(to top,#196acc,#329ddf);
     border: 1px solid #00299b;
 }
-i.icon-twitter {
+.icon-box .icon-twitter {
     background: linear-gradient(to top,#04a0bd,#59e3ff);
     border: 1px solid #009ac6;
 }
-i.icon-youtube {
+.icon-box .icon-youtube {
     background: linear-gradient(to top,#e50200,#f00400);
     border: 1px solid #930000;
 }
-i.icon-envelop {
+.icon-box .icon-envelop {
     background: linear-gradient(to top,#1b9f53,#3fc275);
 }
 .cards span {
@@ -521,4 +526,75 @@ section .owl-dots.disabled {
 }
 .nav>li {
     position: relative;
+}
+.ui-widget.ui-widget-content {
+    width: 750px !important;
+    padding: 0;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    z-index: 900;
+    border: none;
+}
+.ui-widget-header {
+    border: none;
+}
+.ui-dialog .ui-resizable-ne {
+    display: none!important;
+}
+.ui-dialog .ui-dialog-titlebar {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 0;
+}
+.email-label {
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #363636;
+}
+.email-field {
+    width: 385px;
+    border: 1px solid #b7b7b7;
+    border-radius: 2px;
+    padding: 20px 3px;
+}
+div#dialog.ui-dialog-content.ui-widget-content {
+    padding: 45px 92px 166px 83px;
+}
+.form-box {
+    font-size: 24px!important;
+    font-weight: bold;
+    width: 528px;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+}
+.reset-button {
+    background: #d4d4d4;
+    margin-top: 40px;
+}
+.forgot-password-form .facebook-link {
+    color: #fff;
+    background: #557bcc;
+    text-decoration: none;
+}
+.divider {
+    font-size: 22px;
+    margin: 30px auto;
+    text-align: center;
+}
+.forgot-password-form .icon-facebook {
+    font-size: 20px;
 }

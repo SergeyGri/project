@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <title>PS3</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" defer></script>
     <script src="js/owl.carousel.min.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
     <script src="js/jquery.main.js" defer></script>
 
 </head>
@@ -27,6 +29,7 @@
                 <div class="float-box">
                     <span>1-855-BESTMOUNTS</span>
                     <a href="#" class="login">Login</a>
+                    <a href="#" class="forgot-password">Forgot Your Password</a>
                     <a href="#" class="cart"><i class="icon-cart"></i> View Cart</a>
                     <span>&#36;0.00</span>
                 </div>
@@ -266,5 +269,14 @@
             </div>
         </div>
     </footer>
+    <div id="dialog" title="FORGOT YOU PASSWORD?">
+        <form action="" name="forgot-password-form" class="forgot-password-form"method="post">
+            <label class="email-label" for="email">ENTER YOUR<br>EMAIL</label>
+            <input class="email-field" type="email" id="email" placeholder="">
+            <button class="reset-button form-box" type="reset">reset password</button>
+            <div class="divider">OR</div>
+            <a class="facebook-link form-box" href="#"><i class="icon-facebook"></i>log in using facebook</a>
+        </form>
+    </div>
 </body>
 </html>
