@@ -602,10 +602,14 @@ div#dialog.ui-dialog-content.ui-widget-content {
     position: fixed;
     top:33%;
     z-index: 900;
+    transform: translate(-250px,0);
+    transition: transform .3s;
+}
+.spoiler.active {
+    transform: translate(0,0);
 }
 .toggler {
     width: 250px;
-    display: none;
     float: left;
 }
 #support-question {
@@ -644,9 +648,9 @@ div#dialog.ui-dialog-content.ui-widget-content {
     border-radius: 3px;
     font-family: 'ostrich_sansblack';
 }
-/*.toggler:hover {*/
-    /*transform: translate(250px,0);*/
-/*}*/
+.toggler.active {
+    transform: translate(250px,0);
+}
 .spoiler-button {
     font-size: 20px;
     font-weight: bold;
