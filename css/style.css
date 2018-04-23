@@ -598,12 +598,15 @@ div#dialog.ui-dialog-content.ui-widget-content {
 .forgot-password-form .icon-facebook {
     font-size: 20px;
 }
+.spoiler {
+    position: fixed;
+    top:33%;
+    z-index: 900;
+}
 .toggler {
     width: 250px;
-    position: fixed;
-    top:40%;
-    z-index: 900;
     display: none;
+    float: left;
 }
 #support-question {
     height: 220px;
@@ -645,8 +648,6 @@ div#dialog.ui-dialog-content.ui-widget-content {
     /*transform: translate(250px,0);*/
 /*}*/
 .spoiler-button {
-    position: fixed;
-    top:33%;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -659,10 +660,9 @@ div#dialog.ui-dialog-content.ui-widget-content {
     margin-left: -1px;
     border: 1px solid #000;
     cursor: pointer;
+    display: inline-block;
 }
-.spoiler-button:hover {
-    opacity: 0.8;
-}
-.toggler .support-button:hover {
-    opacity: 0.8;
+.spoiler-button:hover,
+.toggler .support-button:hover{
+    opacity: 0.9;
 }
