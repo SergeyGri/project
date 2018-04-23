@@ -602,9 +602,8 @@ div#dialog.ui-dialog-content.ui-widget-content {
     width: 250px;
     position: fixed;
     top:40%;
-    left: -250px;
     z-index: 900;
-    display: block;
+    display: none;
 }
 #support-question {
     height: 220px;
@@ -642,14 +641,12 @@ div#dialog.ui-dialog-content.ui-widget-content {
     border-radius: 3px;
     font-family: 'ostrich_sansblack';
 }
-.toggler:hover {
-    transform: translate(250px,0);
-}
-.toggler:after {
-    content: 'Need Help?';
-    position: absolute;
-    top:0;
-    left:100%;
+/*.toggler:hover {*/
+    /*transform: translate(250px,0);*/
+/*}*/
+.spoiler-button {
+    position: fixed;
+    top:33%;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -661,6 +658,10 @@ div#dialog.ui-dialog-content.ui-widget-content {
     padding: 5px;
     margin-left: -1px;
     border: 1px solid #000;
+    cursor: pointer;
+}
+.spoiler-button:hover {
+    opacity: 0.8;
 }
 .toggler .support-button:hover {
     opacity: 0.8;
