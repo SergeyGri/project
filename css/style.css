@@ -598,3 +598,70 @@ div#dialog.ui-dialog-content.ui-widget-content {
 .forgot-password-form .icon-facebook {
     font-size: 20px;
 }
+.toggler {
+    width: 250px;
+    position: fixed;
+    top:40%;
+    left: -250px;
+    z-index: 900;
+    display: block;
+}
+#support-question {
+    height: 220px;
+    resize: none;
+}
+.toggler h3 {
+    background: #04a0bd;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'ostrich_sansblack';
+}
+.toggler #email-field,
+.toggler #support-question {
+    display: block;
+    padding: 5px;
+    margin: 15px 0;
+    width: 220px;
+    border: 1px solid #04a0bd;
+}
+.toggler .support-form {
+    background: #59e3ff;
+    padding: 15px;
+}
+.toggler .support-button {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 5px 20px;
+    font-size: 15px;
+    background: #04a0bd;
+    border: none;
+    border-radius: 3px;
+    font-family: 'ostrich_sansblack';
+}
+.toggler:hover {
+    transform: translate(250px,0);
+}
+.toggler:after {
+    content: 'Need Help?';
+    position: absolute;
+    top:0;
+    left:100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #04a0bd;
+    font-family: 'ostrich_sansblack';
+    letter-spacing: 2px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    padding: 5px;
+    margin-left: -1px;
+    border: 1px solid #000;
+}
+.toggler .support-button:hover {
+    opacity: 0.8;
+}
